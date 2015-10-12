@@ -14,8 +14,7 @@ public class Inventory {
         while (true) {
             if (inventory.size() == 0) {
                 System.out.println("Nothing in inventory");
-            }
-            else {
+            } else {
                 int invNum = 1;
                 for (InventoryItem invItem : inventory) {
                     String quaBox = "[" + invItem.quantity + "]";
