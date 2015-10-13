@@ -1,6 +1,7 @@
 import com.sun.tools.doclets.formats.html.SourceToHTMLConverter;
 
 import java.util.ArrayList;
+import java.util.Random;
 import java.util.Scanner;
 
 /**
@@ -10,6 +11,14 @@ public class Inventory {
     public static void main(String [] args) {
         ArrayList<InventoryItem> inventory = new ArrayList();
         Scanner scanner = new Scanner(System.in);
+        String[] responses = new String[]{
+                    "You fucked up",
+                    "You're about as useful as a football bat",
+                    "I didn't know they stacked shit that high",
+                    "What the shit Vladimir?"
+        };
+
+        Random newRandom = new Random();
 
         while (true) {
             if (inventory.size() == 0) {
@@ -59,7 +68,7 @@ public class Inventory {
                         isValid = true;
                     }
                     else {
-                        System.out.println("Incorrect category,");
+                        System.out.println(responses[newRandom.nextInt(responses.length)]);
                     }
                 }
                 inventory.add(item);
