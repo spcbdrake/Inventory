@@ -25,7 +25,6 @@ public class Inventory {
                 System.out.println("Nothing in inventory");
             } else {
                 for (InventoryItem invItem : inventory) {
-                    String quaBox;
                     System.out.println(String.format("[%d] %s %s", invItem.quantity, invItem.text,invItem.category));
                 }
             }
