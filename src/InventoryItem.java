@@ -7,10 +7,5 @@ import java.util.Scanner;
 public class InventoryItem {
     String text;
     int quantity;
-
-
-    public InventoryItem(String text, int quantity) {
-        this.text = text;
-        this.quantity = quantity;
-    }
+    String category;
 }

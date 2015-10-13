@@ -15,12 +15,9 @@ public class Inventory {
             if (inventory.size() == 0) {
                 System.out.println("Nothing in inventory");
             } else {
-                int invNum = 1;
                 for (InventoryItem invItem : inventory) {
-                    String quaBox = "[" + invItem.quantity + "]";
-                    System.out.println(invNum + ". " + quaBox + " " + invItem.text);
-                    invNum++;
-
+                    String quaBox;
+                    System.out.println(String.format("[%d] %s %s", invItem.quantity, invItem.text,invItem.category));
                 }
             }
 
@@ -33,12 +30,38 @@ public class Inventory {
             int optionNum= Integer.valueOf(option);
 
             if (optionNum == 1) {
+                InventoryItem item = null;
                 System.out.println("Please enter item name.");
                 String name = scanner.nextLine();
                 System.out.println("Please enter quantity.");
                 String qua = scanner.nextLine();
                 int quaNum = Integer.valueOf(qua);
-                InventoryItem item = new InventoryItem(name, quaNum);
+                String cat = "";
+                boolean isValid = false;
+                while (!isValid)
+                {
+                    System.out.println("Please enter item category");
+                    cat = scanner.nextLine();
+                    if (cat.toLowerCase().equals("cars")) {
+                        item = new Cars(name, quaNum);
+                        isValid = true;
+                    } else if (cat.toLowerCase().equals("shoes")) {
+                        item= new Shoes(name, quaNum);
+                        isValid = true;
+                    } else if (cat.toLowerCase().equals("guns")) {
+                        item = new Guns(name, quaNum);
+                        isValid = true;
+                    } else if (cat.toLowerCase().equals("beer")) {
+                        item = new Beer(name, quaNum);
+                        isValid = true;
+                    } else if (cat.toLowerCase().equals("movies")) {
+                        item = new Movies(name, quaNum);
+                        isValid = true;
+                    }
+                    else {
+                        System.out.println("Incorrect category,");
+                    }
+                }
                 inventory.add(item);
             }
 
