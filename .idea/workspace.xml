@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="faa8e55e-08c2-4d4d-b1d7-adf241f6e5b1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Beer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Cars.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Guns.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Movies.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Shoes.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Inventory/Inventory.class" afterPath="$PROJECT_DIR$/out/production/Inventory/Inventory.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Inventory/InventoryItem.class" afterPath="$PROJECT_DIR$/out/production/Inventory/InventoryItem.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Inventory.java" afterPath="$PROJECT_DIR$/src/Inventory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/InventoryItem.java" afterPath="$PROJECT_DIR$/src/InventoryItem.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Inventory.iws" />
@@ -432,7 +425,13 @@
       <option name="project" value="LOCAL" />
       <updated>1444677023090</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="added category system">
+      <created>1444756902914</created>
+      <option name="number" value="00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1444756902914</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -470,7 +469,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial import" />
     <MESSAGE value="Final" />
-    <option name="LAST_COMMIT_MESSAGE" value="Final" />
+    <MESSAGE value="added category system" />
+    <option name="LAST_COMMIT_MESSAGE" value="added category system" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
