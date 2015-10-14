@@ -12,9 +12,9 @@ public class Inventory {
         ArrayList<InventoryItem> inventory = new ArrayList();
         Scanner scanner = new Scanner(System.in);
         String[] responses = new String[]{
-                    "You fucked up",
-                    "You're about as useful as a football bat",
-                    "I didn't know they stacked shit that high",
+                    "You dun goofed",
+                    "Sweet Jesus,",
+                    "What the fuck man?",
                     "What the shit Vladimir?"
         };
 
